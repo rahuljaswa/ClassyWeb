@@ -1,0 +1,77 @@
+<% content_for :html_class do %>
+  	theme-c has-gradient has-pattern
+<% end %>
+
+<% content_for :head do %>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ReTouch</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no, target-densitydpi=device-dpi">
+	<script src="javascript/head.js"></script>
+	<link rel="stylesheet" media="screen" href="styles/screen.css">
+	<link rel="stylesheet" media="print" href="styles/print.css">
+<% end %>
+
+<div id="root">
+	<header id="top">
+		<h1><a href="./" accesskey="h"><img src="/images/logo_257x81.png" alt="Placeholder" width="257" height="81"></a></h1>
+		<nav id="skip">
+			<ul>
+				<li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
+				<li><a href="#content" accesskey="c">Skip to content (c)</a></li>
+				<li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+			</ul>
+		</nav>
+		<nav id="nav">
+			<ul>
+				<li><a accesskey="1" href="./">Home</a> <em>(1)</em></li>
+				<li class="a"><a accesskey="5" href="./">Get app</a> <em>(5)</em></li>
+			</ul>
+		</nav>
+	</header>  
+	<article id="welcome">
+		<figure class="mobile-d"><img src="/images/screenshot_352x628.png" alt="Placeholder" width="352" height="628"></figure>
+		<h2>Classy - Guided Spin, Pilates, Yoga</h2>
+		<br>
+		<p>Empowerment through music and exercise. Always free.</p>
+		<ul class="download-a a">
+			<li class="as"><a rel="external" href="./">Download on the App Store</a></li>
+		</ul>
+	</article>
+	<section id="content" class="a">
+		<article>
+			<header class="heading-a">
+				<h3><span class="strong">Bumping Music. Scorching Workouts. Always Free.</span></h3>
+				<p>We work with the best fitness instructors in the world to create high-intensity workouts with amazing music. All you need is headphones. If you love spin, yoga, pilates, interval training, HiiT, or anything else that gets your heart pounding, you're going to love Classy workouts.</p>
+			</header>
+			<ul class="list-a">
+				<li><i class="icon-ecommerce" data-icon="M"></i> <span class="title">Free Forever</span>We don't believe in charging you to feel great. If you like your workout, you can optionally tip your instructor.</li>
+				<li><i class="icon-music" data-icon="o"></i> <span class="title">Bumping Music</span>We spend hours hand selecting music for each workout that helps you push it to the max.</li>
+				<li><i class="icon-ecommerce" data-icon="b"></i> <span class="title">Proven Results</span>Based on techniques and science that are proven to get you ready for swimsuit season.</li>
+			</ul>
+		</article>
+		<article class="vb">
+			<header class="heading-a">
+				<h3><span class="small">Testimonials</span> <span class="strong">Review</span> of customers</h3>
+			</header>
+			<ul class="slider-a">
+				<li><img src="/images/testimonial_3_157x157.png" alt="Placeholder" width="157" height="157"><span class="title"><span>Greenwood Sisters</span> Running + Spin + Pilates</span> We love having classes wherever we go. Just throw on a pair of running shoes and do an amazing workout anywhere. Greatest invention ever!</li>
+				<li><img src="/images/testimonial_1_157x157.png" alt="Placeholder" width="157" height="157"><span class="title"><span>Vaishali</span> Spin + Bootcamp</span> Best. Workouts. Ever. 45 minute classes feel like they're 10 minutes!</li>
+				<li><img src="/images/testimonial_2_157x157.png" alt="Placeholder" width="157" height="157"><span class="title"><span>Katrina</span> Pilates + Hiking</span> Classy is my favorite way to learn new workouts and discover great music!</li>
+			</ul>
+		</article>			
+	</section>
+	<footer id="footer">
+		<h3>Follow us</h3>
+		<ul class="social-a">
+			<li class="in"><a rel="external" href="https://instagram.com/classy_workouts/">Instagram</a></li>
+		</ul>
+	</footer>
+</div>
+<script>
+    head.load('http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js','javascript/tf.js','javascript/scripts.js','javascript/mobile.js')
+</script>
