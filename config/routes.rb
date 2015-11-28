@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  match '/' => 'landing#index', :via => :get
-  match '/privacy' => 'privacy#index', :via => :get
-  root :to => 'landing#index'
+  	root :to => 'landing#index'
+
+  	match '/' => 'landing#index', :via => :get
+  	match '/privacy' => 'privacy#index', :via => :get
+	resources "contacts", only: [:new, :create]
 end

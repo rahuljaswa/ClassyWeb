@@ -1,3 +1,110 @@
-// Place all the styles related to the landing controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$body-min-width: 800px;
+$theme-background-color: #345193;
+$theme-text-color: #FFFFFF;
+
+html.landing {
+	min-width: $body-min-width + 100;
+	color: white;
+	body {
+		background-color: $theme-background-color;
+		div#main_body_devices {
+			width: $body-min-width;
+			height: 300px;
+			display: block;
+			margin: 40px auto;
+			position: relative;
+			img {
+				position: absolute;
+			}
+
+			// device margin
+			$tablet_margin: -20px;
+			$tv_margin: -40px;
+			$web_margin: -80px;
+
+			$total_unused_space: -$tablet_margin + -$tv_margin + -$web_margin;
+			$total_used_space: $body-min-width + $total_unused_space;
+
+			$tablet_left: 0;
+			$tablet_width: 4/24 * $total_used_space;
+			
+			$tv_left: $tablet_left + $tablet_width + $tablet_margin;
+			$tv_width: 9/24 * $total_used_space;
+			
+			$web_left: $tv_left + $tv_width + $tv_margin;
+			$web_width: 8/24 * $total_used_space;
+			
+			$phone_left: $web_left + $web_width + $web_margin;
+			$phone_width: 3/24 * $total_used_space;
+
+			img#tablet {
+				width: $tablet_width;
+				left: $tablet_left;
+				top: 50px;
+				z-index: 2;
+			}
+			img#tv {
+				width: $tv_width;
+				top: 10px;
+				left: $tv_left;
+				z-index: 1;
+			}	
+			img#web {
+				width: $web_width;
+				left: $web_left;
+				top: 0px;
+				z-index: 0;
+			}
+			img#phone {
+				width: $phone_width;
+				left: $phone_left;
+				z-index: 3;
+				top: 40px;
+			}
+		}
+		div#main_body_copy {
+			display: block;
+			width: $body-min-width;
+			margin: 0 auto;
+			div.main {
+				display: inline-block;
+				text-align: left;
+				vertical-align: middle;
+				font-family: "Avenir-Black";
+				font-size: 50px;
+				//line-height: 65px;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			div.detail {
+				display: inline-block;
+				text-align: right;
+				vertical-align: middle;
+				font-family: "Avenir-Heavy";
+				font-size: 21px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			span.underline {
+				text-decoration: underline;
+			}
+		}
+		a.rounded_button {
+			color: $theme-text-color;
+			text-decoration: none;
+			display: block;
+			width: 200px;
+			height: 50px;
+			margin: 50px auto;
+			text-align: center;
+			border: 1px solid $theme-text-color;
+			border-radius: 25px; 
+			line-height: 50px;
+			transition: 0.3s;
+		}
+		a.rounded_button:hover, a.rounded_button:active {
+			background-color: $theme-text-color;
+			color: $theme-background-color;
+		}
+	}	
+}
