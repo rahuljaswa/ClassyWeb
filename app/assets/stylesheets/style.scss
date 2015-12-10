@@ -1,17 +1,8 @@
-$footer-height: 150px;
-
-* {
-  	margin: 0;
-}
-html, body {
-	height: 100%;
-}
 html {
 	body {
+		margin: 0;
 		div#main_body {
 			font-family: "Avenir";
-			min-height: 100%;
-			margin-bottom: -$footer-height;
 			div#header {
 				font-size: 14pt;
 				margin: 15px;
@@ -38,16 +29,11 @@ html {
 				}
 			}
 		}
-		div#main_body:after {
-			content: "";
-			display: block;
-		}
-		div#footer, div#main_body:after {
-			height: $footer-height;
-		}
 		div#footer {
 			font-family: "Avenir";
 			font-size: 12px;
+			background-color: #555;
+			padding: 15px;
 			ul {
 				li#instagram {
 					a {

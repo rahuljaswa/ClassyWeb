@@ -12,18 +12,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no, target-densitydpi=device-dpi">
 <% end %>
 
-<div id="main_body_devices">
-	<%= image_tag 'tablet.png', :id => 'tablet' %>
-	<%= image_tag 'tv.png', :id => 'tv' %>
-	<%= image_tag 'web.png', :id => 'web' %>
-	<%= image_tag 'phone.png', :id => 'phone' %>
-</div>
-<div id="main_body_copy">
-	<div class="detail">
-		Publish beautiful, interactive<br />fitness experiences for your<br />followers in minutes for free. <span class="underline">Make<br />money for every subscriber.</span>
+<div class="main_body_section" id="section_1">
+	<div id="main_body_devices">
+		<%= image_tag 'tablet.png', :id => 'tablet' %>
+		<%= image_tag 'tv.png', :id => 'tv' %>
+		<%= image_tag 'web.png', :id => 'web' %>
+		<%= image_tag 'phone.png', :id => 'phone' %>
 	</div>
-	<div class="main">
-		Build Your<br />Fitness Empire
+	<div id="main_body_copy">
+		<div class="detail">
+			Publish beautiful, interactive<br />fitness experiences for your<br />followers in minutes for free. <span class="underline">Make<br />money for every subscriber.</span>
+		</div>
+		<div class="main">
+			Build Your<br />Fitness Empire
+		</div>
 	</div>
+	<a href="mailto:r@getclassy.co" class="rounded_button">Get Started</a>
 </div>
-<a href="mailto:r@getclassy.co" class="rounded_button">Get Started</a>
+
+<div class="main_body_section" id="section_2">
+	<span class="section_title">How it Works</span>
+	<span class="section_subtitle">Provide gorgeous, interactive fitness experiences to your followers and monetize your personal fitness brand.</span>
+	<ul>
+		<li>
+			<%= image_tag 'create_icon.png', :class => 'how_it_works_icon' %>
+			<div class="how_it_works_text">Create interactive workout programs or use one of our templates</div>
+		</li>
+		<li>
+			<%= image_tag 'media_icon.png', :class => 'how_it_works_icon' %>
+			<div class="how_it_works_text">Add music, videos, or any of the other things that make your fans love you</div>
+		</li>
+		<li>
+			<%= image_tag 'branding_icon.png', :class => 'how_it_works_icon' %>
+			<div class="how_it_works_text">Customize the design and branding for your apps to give it a personal touch</div>
+		</li>
+		<li>
+			<%= image_tag 'publish_icon.png', :class => 'how_it_works_icon' %>
+			<div class="how_it_works_text">Instantly publish or update your app for all the app stores</div>
+		</li>
+	</ul>
+</div>
+
+<div class="main_body_section" id="section_3">
+	<span class="section_title">Sample Apps</span>
+	<span class="section_subtitle">You focus on engaging your followers, we focus on building beautiful apps. Pick a style that showcases your authentic look and feel.</span>
+	<ul class="bxslider">
+		<li><%= image_tag 'tv.png', :id => 'tv' %></li>
+		<li><%= image_tag 'phone.png', :id => 'phone' %></li>
+		<li><%= image_tag 'tablet.png', :id => 'tablet' %></li>
+		<li><%= image_tag 'web.png', :id => 'web' %></li>
+	</ul>
+</div>
